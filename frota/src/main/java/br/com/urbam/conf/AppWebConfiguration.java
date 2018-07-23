@@ -12,10 +12,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.urbam.controllers.HomeController;
+import br.com.urbam.dao.ProductDAO;
 
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses= {HomeController.class})
+@ComponentScan(basePackageClasses= {HomeController.class,ProductDAO.class})
 
 @EnableCaching
 public class AppWebConfiguration {
